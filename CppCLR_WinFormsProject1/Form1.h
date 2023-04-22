@@ -56,6 +56,8 @@ namespace CppCLRWinFormsProject {
 	private: System::Windows::Forms::TextBox^ display;
 	private: System::Windows::Forms::TextBox^ afisare_calcul;
 
+
+
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -309,6 +311,10 @@ namespace CppCLRWinFormsProject {
 			// 
 			// display
 			// 
+			this->display->Cursor = System::Windows::Forms::Cursors::IBeam;
+			this->display->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 1.5F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(238)));
+			this->display->ForeColor = System::Drawing::SystemColors::InfoText;
 			this->display->Location = System::Drawing::Point(110, 30);
 			this->display->Multiline = true;
 			this->display->Name = L"display";
@@ -320,11 +326,11 @@ namespace CppCLRWinFormsProject {
 			this->afisare_calcul->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->afisare_calcul->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(238)));
-			this->afisare_calcul->Location = System::Drawing::Point(112, 33);
+			this->afisare_calcul->Location = System::Drawing::Point(111, 31);
 			this->afisare_calcul->Margin = System::Windows::Forms::Padding(1);
 			this->afisare_calcul->Multiline = true;
 			this->afisare_calcul->Name = L"afisare_calcul";
-			this->afisare_calcul->Size = System::Drawing::Size(323, 80);
+			this->afisare_calcul->Size = System::Drawing::Size(323, 84);
 			this->afisare_calcul->TabIndex = 36;
 			this->afisare_calcul->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
