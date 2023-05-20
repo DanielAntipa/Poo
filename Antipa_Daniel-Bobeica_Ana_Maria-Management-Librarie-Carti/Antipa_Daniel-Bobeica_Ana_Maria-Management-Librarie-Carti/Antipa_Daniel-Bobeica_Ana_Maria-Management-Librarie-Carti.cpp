@@ -158,6 +158,7 @@ void adaugaCarte(int contor) {
     bool Imprumutata;
     float Rating;
     
+    cout << endl << endl;
     cout << "ADAUGATI O CARTE\n\n";
 
     if(contor < 5) {
